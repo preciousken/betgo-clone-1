@@ -1,0 +1,25 @@
+/* variables */
+:root{
+ --primaryOne:#FDD100;
+ --black:#000;
+ --lightBlack:#242424;
+ --lighterBlack:#474747;
+ --white:#fff;
+}
+.bodysection{
+ background-color: var(--lighterBlack);
+ display: flex;
+}
+.bodysection div{
+ /* background-color: red; */
+ margin: 10px;
+}
+.bodysection div:nth-child(1){
+ width: 25%;
+}
+.bodysection div:nth-child(2){
+ width: 50%;
+}
+.bodysection div:nth-child(3){
+ width: 25%;
+}
