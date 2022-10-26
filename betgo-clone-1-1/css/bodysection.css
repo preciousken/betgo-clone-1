@@ -1,0 +1,86 @@
+/* variables */
+:root{
+ --primaryOne:#FDD100;
+ --black:#000;
+ --lightBlack:#242424;
+ --lighterBlack:#474747;
+ --white:#fff;
+}
+body{
+    position: relative;
+}
+.bodysection{
+ background-color: var(--lighterBlack);
+ display: flex;
+}
+
+.bodysection div .popular {
+    cursor: pointer;
+}
+.bodysection div{
+ /* background-color: red; */
+ margin: 10px;
+}
+.bodysection div > *{
+    margin: 10px 5px;
+}
+.bodysection hr{
+    margin-top: 30px;
+}
+.bodysection div hr{
+    border: 1px solid grey;
+}
+.bodysection div:nth-child(1){
+ width: 20%;
+ border-right: 1px solid var(--primaryOne);
+}
+.bodysection div:nth-child(2){
+ width: 50%;
+}
+.bodysection div:nth-child(3){
+ width: 25%;
+}
+.bodysection div:nth-child(1) form{
+/* background-color: red; */
+display: flex;
+justify-content: center;
+background-color: transparent;
+border: 1px solid white;
+border-radius: 10px;
+/* align-items: center; */
+}
+.bodysection div:nth-child(1) form > * {
+    flex-grow: 1;
+}
+.bodysection div:nth-child(1) form input{
+    width: 90%;
+    padding: 0 10px;
+    background-color: transparent;
+    color: #fff !important;
+    /* border: 1px solid var(--primaryOne); */
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    /* height: 100% !important ; */
+}
+.bodysection div:nth-child(1) form .btn{
+    /* width: 20%; */
+    font-size: 1.2rem;
+    background-color: transparent;
+    outline: none;
+    /* height: 100%; */
+}
+.bodysection div:nth-child(1) .popular{
+    font-family: 1.2rem;
+    color: white;
+    flex-grow: 0 !important;
+}
+.bodysection div:nth-child(1) .popular span{
+    margin-left: 10px;
+    background-color: var(--primaryOne);
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.bodysection div:nth-child(1) .popularicon{
+    color: var(--primaryOne);
+}
